@@ -1,0 +1,14 @@
+# Changes to the openai-proxy's docker-compose.yml
+services:
+  llm-proxy:
+    # A pinned/stable tag, not main-latest: `docker compose up` never re-pulls an existing image, so a floating tag silently goes
+    # stale (ours was 6 weeks old). Update on purpose with `docker compose pull`.
+    image: ghcr.io/berriai/litellm:main-stable
+    ports:
+      - "127.0.0.1:8000:8000"       # localhost only; "8000:8000" publishes the proxy on every network interface
+    volumes:
+      - ./litellm_config.yaml:/app/config.yaml:ro
+      - ./agy_callbacks.py:/app/agy_callbacks.py:ro        # the agy fix (proxy/agy_callbacks.py in this repo)
+      # benchmarking only (docs/measuring-token-usage.md):
+      # - ./usage_log.py:/app/usage_log.py:ro
+      # - ./logs:/app/logs

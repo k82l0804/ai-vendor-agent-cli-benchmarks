@@ -1,0 +1,47 @@
+[
+ {
+  "tool": "goose",
+  "run": 0,
+  "secs": 77.7,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 22,
+   "in": 202104,
+   "out": 3543
+  },
+  "notes": true,
+  "fixture_intact": true,
+  "tail": "y_coupon(total, code)` with SAVE10/HALF/FREE codes (case-insensitive, validates inputs), added 5 comprehensive tests, and all 8 tests pass. | "
+ },
+ {
+  "tool": "goose",
+  "run": 1,
+  "secs": 57.9,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 10,
+   "in": 80168,
+   "out": 2020
+  },
+  "notes": true,
+  "fixture_intact": true,
+  "tail": "ded by 10 instead of 100) and added `apply_coupon` function with case-insensitive codes SAVE10/HALF/FREE plus validation. All 8 tests pass. | "
+ },
+ {
+  "tool": "goose",
+  "run": 2,
+  "secs": 67.0,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 19,
+   "in": 181145,
+   "out": 3882
+  },
+  "notes": true,
+  "fixture_intact": true,
+  "tail": " (dividing by 10 instead of 100) and added `apply_coupon()` with case-insensitive codes SAVE10/HALF/FREE plus validation. All 8 tests pass. | "
+ }
+]

@@ -1,0 +1,13 @@
+# Add to the openai-proxy's litellm_config.yaml to make agy (Antigravity CLI) work with tools. Everything else (the model_list)
+# stays as it is. See docs/agy-and-the-proxy.md for why each piece exists.
+
+litellm_settings:
+  # Relabels agy's tool-result turns; without it LiteLLM's Gemini adapter drops them and the model re-runs the same tool call.
+  # (Optional, for benchmarking: add usage_log.proxy_handler_instance to this list, see docs/measuring-token-usage.md.)
+  callbacks: agy_callbacks.proxy_handler_instance
+
+router_settings:
+  # agy can only ask for its own built-in Gemini model names. Route those names to the model you actually want to test.
+  model_group_alias:
+    gemini-3.8-flash: nemotron-3-ultra
+    gemini-3.1-flash-lite-preview: nemotron-3-ultra   # agy's background "helper" model (titles, summaries)

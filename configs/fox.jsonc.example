@@ -1,0 +1,16 @@
+// ~/.config/fox/fox.jsonc  (Fox Code CLI)  -- also valid as ~/.config/kilo/kilo.jsonc for Kilo
+// No apiKey line on purpose: an empty "apiKey": "" makes the tool send NO key at all. The key comes from the environment
+// variable named in "env" instead; launch the tool with LITELLM_MASTER_KEY set (see README "Giving a tool the proxy key").
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "provider": {
+    "local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "env": ["LITELLM_MASTER_KEY"],
+      "options": { "baseURL": "http://localhost:8000/v1" },
+      "models": {
+        "nemotron-3-ultra": { "name": "Nemotron 3 Ultra", "limit": { "context": 256000, "output": 65000 } }
+      }
+    }
+  }
+}

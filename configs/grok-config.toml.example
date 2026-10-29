@@ -1,0 +1,7 @@
+# ~/.grok/config.toml  (Grok CLI) -- add this block to use the proxy. bench.py uses an isolated GROK_HOME with the same block.
+[model.nemotron-proxy]
+model = "nemotron-3-ultra"          # the model name defined in the proxy's litellm_config.yaml
+base_url = "http://localhost:8000/v1"
+name = "Nemotron 3 Ultra (openai-proxy)"
+env_key = "FOXKEY"                  # env var that holds the proxy key (export FOXKEY="$LITELLM_MASTER_KEY" when launching grok)
+context_window = 256000

@@ -1,0 +1,197 @@
+[
+ {
+  "tool": "grok",
+  "run": 0,
+  "secs": 19.9,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 15,
+   "in": 276818,
+   "out": 3376
+  },
+  "native": {
+   "in": 87390,
+   "out": 3375
+  },
+  "notes": true
+ },
+ {
+  "tool": "grok",
+  "run": 1,
+  "secs": 15.3,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 13,
+   "in": 232888,
+   "out": 2725
+  },
+  "native": {
+   "in": 41703,
+   "out": 2724
+  },
+  "notes": true
+ },
+ {
+  "tool": "grok",
+  "run": 2,
+  "secs": 15.4,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 12,
+   "in": 228266,
+   "out": 2886
+  },
+  "native": {
+   "in": 55594,
+   "out": 2886
+  },
+  "notes": true
+ },
+ {
+  "tool": "codex",
+  "run": 0,
+  "secs": 21.7,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 12,
+   "in": 590260,
+   "out": 1655
+  },
+  "native": {
+   "in": 590260,
+   "out": 1655
+  },
+  "notes": true
+ },
+ {
+  "tool": "codex",
+  "run": 1,
+  "secs": 27.9,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 11,
+   "in": 540590,
+   "out": 1715
+  },
+  "native": {
+   "in": 540590,
+   "out": 1715
+  },
+  "notes": true
+ },
+ {
+  "tool": "codex",
+  "run": 2,
+  "secs": 17.3,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 10,
+   "in": 494449,
+   "out": 2264
+  },
+  "native": {
+   "in": 494449,
+   "out": 2264
+  },
+  "notes": true
+ },
+ {
+  "tool": "claude",
+  "run": 0,
+  "secs": 16.4,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 11,
+   "in": 225899,
+   "out": 2547
+  },
+  "native": {
+   "in": 93147,
+   "out": 2538
+  },
+  "notes": true
+ },
+ {
+  "tool": "claude",
+  "run": 1,
+  "secs": 23.3,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 16,
+   "in": 354640,
+   "out": 3317
+  },
+  "native": {
+   "in": 98112,
+   "out": 3302
+  },
+  "notes": true
+ },
+ {
+  "tool": "claude",
+  "run": 2,
+  "secs": 17.2,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 13,
+   "in": 276632,
+   "out": 2752
+  },
+  "native": {
+   "in": 73480,
+   "out": 2739
+  },
+  "notes": true
+ },
+ {
+  "tool": "agy",
+  "run": 0,
+  "secs": 12.5,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 9,
+   "in": 100951,
+   "out": 2193
+  },
+  "native": {},
+  "notes": true
+ },
+ {
+  "tool": "agy",
+  "run": 1,
+  "secs": 12.4,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 9,
+   "in": 98916,
+   "out": 2123
+  },
+  "native": {},
+  "notes": true
+ },
+ {
+  "tool": "agy",
+  "run": 2,
+  "secs": 12.6,
+  "rc": 0,
+  "hidden": "6 passed in 0.01s",
+  "proxy": {
+   "calls": 9,
+   "in": 100774,
+   "out": 2115
+  },
+  "native": {},
+  "notes": true
+ }
+]

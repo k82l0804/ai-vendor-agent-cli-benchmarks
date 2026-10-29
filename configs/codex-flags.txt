@@ -1,0 +1,6 @@
+# Codex has no config file entry here; the provider is passed per run with -c overrides:
+FOXKEY="$LITELLM_MASTER_KEY" codex exec --skip-git-repo-check \
+  -c 'model_providers.fox={name="fox",base_url="http://localhost:8000/v1",env_key="FOXKEY",wire_api="responses"}' \
+  -c model_provider=fox -c model=nemotron-3-ultra  "your prompt"
+# Run interactively with </dev/null removed. For non-interactive use, redirect stdin from /dev/null or codex waits on it.
+# (To make it permanent, put the same provider table under [model_providers.fox] in ~/.codex/config.toml.)

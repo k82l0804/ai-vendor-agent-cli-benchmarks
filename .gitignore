@@ -1,0 +1,7 @@
+runs/
+__pycache__/
+*.pyc
+.env
+*.log
+# result files are committed on purpose (results/); scratch output is not
+results/**/scratch*/
